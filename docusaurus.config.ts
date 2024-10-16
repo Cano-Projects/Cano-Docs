@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Cano Docs',
+  title: 'Cano Suite Docs',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -34,7 +34,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: './sidebars.ts',    
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -51,13 +51,48 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Cano Docs',
+      title: 'Cano Suite Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Cano Suite Logo',
         src: 'img/logo.svg',
       },
       items: [
-       
+        {
+          type: 'doc',
+          docId: 'cano',
+          position: 'left',
+          label: 'Cano',
+        },
+        {
+          type: 'doc',
+          docId: 'canoon',
+          position: 'left',
+          label: 'Canoon',
+        },
+        {
+          type: 'doc',
+          docId: 'canoscript',
+          position: 'left',
+          label: 'Canoscript',
+        },
+        {
+          type: 'doc',
+          docId: 'canoutils',
+          position: 'left',
+          label: 'Canoutils',
+        },
+        {
+          type: 'doc',
+          docId: 'canosh',
+          position: 'left',
+          label: 'Canosh',
+        },
+        {
+          type: 'doc',
+          docId: 'canoos',
+          position: 'left',
+          label: 'CanoOS',
+        },
       ],
     },
     footer: {
@@ -106,7 +141,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The Cano Project.`,
     },
     prism: {
       theme: prismThemes.github,
